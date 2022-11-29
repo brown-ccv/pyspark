@@ -4,4 +4,4 @@ dependencies:
   - pyspark
   - ipykernel
   - pandas
-  - matplotli
+  - matplotlib
