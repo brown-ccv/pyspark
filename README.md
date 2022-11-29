@@ -58,7 +58,7 @@ pip install notebook
 
 4. Clone this directory and navigate to the base of this directory. 
 
-5. Create an anaconda environment using environment.yaml file. 
+5. Create an anaconda environment using *environment.yaml* file. 
 
 ```
 conda env create -f environment.yml
@@ -68,7 +68,17 @@ conda activate pyspark-tutorial
 6. Addinng pyspark-tutorial environment to jupyter notebook. 
 
 ```
-python -m ipvkernel install --user --name=pvspark-tutorial
+python -m ipvkernel install --user --name=pyspark-tutorial
 
 ```
+7. Strart jupyter notebook 
+
+```
+jupyter notbook
+
+```
+8. Navigate to a notebook directory and open a *MEDV_predictions.ipynb* notebook. 
+
+![notebook](assets/template_2.png)
+
 
