@@ -26,3 +26,19 @@ Advantages of using PySpark:
 • It provides simple and comprehensive API. 
 • With Python, the readability of code, maintenance, and familiarity is far better. 
 • It features various options for data visualization, which is difficult using Scala or Java.  
+
+## How to get started 
+
+1. Download Anaconda. In case you are not aware Anaconda is the most used distribution platform for python & R programming languages in the data science & machine learning community as it simplifies the installation of packages like PySpark, pandas, NumPy, SciPy, and many more.
+
+You can install anaconda following this [link](https://www.anaconda.com/products/distribution). 
+
+OR 
+
+Uing Brew
+
+```
+brew install --cask anaconda
+
+```
+
