@@ -39,6 +39,36 @@ Uing Brew
 
 ```
 brew install --cask anaconda
+```
+2. Python 3.4+ is required for the latest version of PySpark, so make sure you have it installed before continuing. (Earlier Python versions will not work.)
+
+```
+python3 --version
+```
+
+```
+sudo apt install python3-pip
+```
+
+3. Install Jupyter Notebook if you do not already have one. 
+
+```
+pip install notebook
+```
+
+4. Clone this directory and navigate to the base of this directory. 
+
+5. Create an anaconda environment using environment.yaml file. 
+
+```
+conda env create -f environment.yml
+conda activate pyspark-tutorial
+
+```
+6. Addinng pyspark-tutorial environment to jupyter notebook. 
+
+```
+python -m ipvkernel install --user --name=pvspark-tutorial
 
 ```
 
