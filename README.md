@@ -69,14 +69,14 @@ conda activate pyspark-tutorial
 
 ```
 python -m ipvkernel install --user --name=pyspark-tutorial
-
 ```
+
 7. Strart jupyter notebook 
 
 ```
-jupyter notbook
-
+jupyter notebook
 ```
+
 8. Navigate to a notebook directory and open a *MEDV_predictions.ipynb* notebook. 
 
 ![notebook](assets/template_2.png)
