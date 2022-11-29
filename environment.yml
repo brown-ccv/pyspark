@@ -1,0 +1,7 @@
+name: pyspark-tutorial
+dependencies:
+  - openjdk
+  - pyspark
+  - ipykernel
+  - pandas
+  - matplotli
