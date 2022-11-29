@@ -6,6 +6,12 @@ Apache Spark is an open-source, distributed processing system used for big data 
 
 ![spark](assets/template_0.png)
 
+![spark](assets/template_3.png)
+
+## Spark architecture 
+
+Runs tasks in parallel and 
+
 ## What is PySpark?
 
 Pyspark is a python api for working with apache spark. I will first explain what do I mean by a "python api" for something and then explain what, specifically, is 'apache spark'.
