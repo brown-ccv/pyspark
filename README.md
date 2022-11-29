@@ -81,4 +81,6 @@ jupyter notebook
 
 ![notebook](assets/template_two.png)
 
+9. *Pyspark-tutorial* should automatically be your environment in the notebook. 
+
 
