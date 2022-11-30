@@ -40,7 +40,7 @@ Important related concepts:
 
 **Cluster** - a network of machines that can take on tasks from a user, interact with one another and return results. 
 
-**RDD** was the primary user-facing API in Spark since its inception. At the core, an RDD is an immutable distributed collection of elements of your data, partitioned across nodes in your cluster that can be operated in parallel with a low-level API that offers transformations and actions.
+**Resilient Distributed Dataset (RDD)** was the primary user-facing API in Spark since its inception. At the core, an RDD is an immutable distributed collection of elements of your data, partitioned across nodes in your cluster that can be operated in parallel with a low-level API that offers transformations and actions.
 
 Part of PySpark we will cover:
 
