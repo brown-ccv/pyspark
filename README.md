@@ -36,11 +36,11 @@ Usually, we would define the amount of data that suits PySpark as what would not
 
 Important related concepts:
 
-Distributed computing - when you distribute a task into several smaller tasks and run all of them at the same time. Pyspark allows you to do it on multiple machines, but it can also be done on a single machine with several threads.
+**Distributed computing** - when you distribute a task into several smaller tasks and run all of them at the same time. Pyspark allows you to do it on multiple machines, but it can also be done on a single machine with several threads.
 
-Cluster - a network of machines that can take on tasks from a user, interact with one another and return results. 
+**Cluster** - a network of machines that can take on tasks from a user, interact with one another and return results. 
 
-RDD was the primary user-facing API in Spark since its inception. At the core, an RDD is an immutable distributed collection of elements of your data, partitioned across nodes in your cluster that can be operated in parallel with a low-level API that offers transformations and actions.
+**RDD** was the primary user-facing API in Spark since its inception. At the core, an RDD is an immutable distributed collection of elements of your data, partitioned across nodes in your cluster that can be operated in parallel with a low-level API that offers transformations and actions.
 
 Part of PySpark we will cover:
 
