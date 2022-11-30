@@ -9,7 +9,7 @@ Apache Spark is an open-source, distributed processing system used for big data 
 
 ## Spark architecture 
 
-Runs tasks in parallel by dividing one task into multiple small tasks. 
+Spark allows to run computing in parallel instead of in sequential order. It divded one big task into multiple smaller taks for efficiency, each task runs seprately on a different machine. 
 
 ![spark](assets/template_3.png)
 
