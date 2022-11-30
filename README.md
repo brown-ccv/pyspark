@@ -13,6 +13,19 @@ Spark allows to run computing in parallel instead of in sequential order. It div
 
 ![spark](assets/template_3.png)
 
+To send commands and receive results from a cluster, you will need to initiate a spark session. 
+
+```
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.appName('session').getOrCreate() # will return existing session if one was
+                                                           # created before and was not closed
+```
+
+This object is your tool for interacting with Spark. Each user of the cluster will have its own Spark Session, that will allow us use the cluster in isolation. All of the sessions are communicating with the main node in the cluster. Main node assigns each of computers in the cluster tasks and coordinates them. Those computers are worker nodes. In order to connect to a worker node, the main node needs to get that node's computing power allocated to it. Allocation of cluster resources is performed by a cluster manager. Each worker node run tasks in parrallel with other worker node and has its own cashe for storing results.
+
+![main_node](assets/template_4.png)
+
+
 ## What is PySpark?
 
 Pyspark is a python api for working with apache spark. I will first explain what do I mean by a "python api" for something and then explain what, specifically, is 'apache spark'.
