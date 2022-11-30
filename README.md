@@ -103,7 +103,7 @@ conda activate pyspark-tutorial
 6. Addinng pyspark-tutorial environment to jupyter notebook. 
 
 ```
-python -m ipvkernel install --user --name=pyspark-tutorial
+python -m ipykernel install --user --name=pyspark-tutorial
 ```
 
 7. Strart jupyter notebook 
