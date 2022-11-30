@@ -13,23 +13,35 @@ Spark allows to run computing in parallel instead of in sequential order. It div
 
 ![spark](assets/template_3.png)
 
+To send commands and receive results from a cluster, you will need to initiate a spark session. 
+
+```
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.appName('session').getOrCreate() # will return existing session if one was
+                                                           # created before and was not closed
+```
+
+This object is your tool for interacting with Spark. Each user of the cluster will have its own Spark Session, that will allow us use the cluster in isolation. All of the sessions are communicating with the main node in the cluster. Main node assigns each of computers in the cluster tasks and coordinates them. Those computers are worker nodes. In order to connect to a worker node, the main node needs to get that node's computing power allocated to it. Allocation of cluster resources is performed by a cluster manager. Each worker node run tasks in parrallel with other worker node and has its own cache for storing results.
+
+![main_node](assets/template_4.png)
+
+
 ## What is PySpark?
 
-Pyspark is a python api for working with apache spark. I will first explain what do I mean by a "python api" for something and then explain what, specifically, is 'apache spark'.
+Pyspark is a python API for working with Spark. 
 
-what I mean by 'python api' is that you can use the syntex and agility of python to interact with and send commands to a system that is not based, at its core, on python.
+Python API is a tool you can use with the syntax and agility of python to interact with and send commands to a system that is not based on python.
 
-With pyspark, you intercat with apache spark - a system designed for working, analyzing and modeling with immense amounts of data in many computers at the same time. putting it in a different way, apache spark allows you to run computations in parallel, instead of sequentially. it allows you to divide one incredibly large task into many smaller tasks, and run each such task on a different machine.this allowes you to accomplish your analysis goals in reasonable time that would not be possible on a single machine.
-
-Usually, we would define the amount of data that suits PySpark as what would not fit into a single machine storage (let alone RAM).
+Usually, we would define the amount of data that suits PySpark as what would not fit into single-machine storage (let alone RAM).
 
 Important related concepts:
 
-distributed computing - when you distribute a task into several smaller task that run at the same time. this is what pyspark allows you to do with many machines, but it can also be done on a single machine with several threads, for example.
+**Distributed computing** - when you distribute a task into several smaller tasks and run all of them at the same time. Pyspark allows you to do it on multiple machines, but it can also be done on a single machine with several threads.
 
-cluster - a network of machines that can take on tasks from a user, interact with one another and return results. these provide the computing resources that pyspark will use to make the computations.
+**Cluster** - a network of machines that can take on tasks from a user, interact with one another and return results. 
 
-Resilient Distributed Dataset (RDD) - an immutable distributed collection of data. it is not tabular, like DataFrames which we will work with later, and has no data schema. therefore, for tabular data wrangling, DataFrames allowes for more API options and uner-then-hood optimizations. still, you might encounter RDDs as you learn more about Spark, and should be aware of their existence.
+**Resilient Distributed Dataset (RDD)** was the primary user-facing API in Spark since its inception. At the core, an RDD is an immutable distributed collection of elements of your data, partitioned across nodes in your cluster that can be operated in parallel with a low-level API that offers transformations and actions.
+
 Part of PySpark we will cover:
 
 
@@ -91,7 +103,7 @@ conda activate pyspark-tutorial
 6. Addinng pyspark-tutorial environment to jupyter notebook. 
 
 ```
-python -m ipvkernel install --user --name=pyspark-tutorial
+python -m ipykernel install --user --name=pyspark-tutorial
 ```
 
 7. Strart jupyter notebook 
