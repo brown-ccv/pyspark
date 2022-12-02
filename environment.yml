@@ -1,6 +1,6 @@
-name: pyspark-tutorial
+name: pyspark-tut
 dependencies:
-  - openjdk
+  - openjdk=11
   - pyspark
   - ipykernel
   - pandas
