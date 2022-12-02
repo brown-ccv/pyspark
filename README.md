@@ -92,7 +92,12 @@ pip install notebook
 ```
 
 4. Clone this directory and navigate to the base of this directory. 
-5. You can avoid using anaconda and install packages separatly using pip. 
+5. You can also avoid using anaconda and install packages separatly using pip and brew. 
+```
+brew install openjdk@11
+export JAVA_HOME=/usr/local/opt/openjdk@11
+pip install pyspark
+````
 
 6. Create an anaconda environment using *environment.yaml* file. 
 
