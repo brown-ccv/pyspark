@@ -57,9 +57,13 @@ MLlib is a wrapper over the PySpark and it is Spark’s machine learning (ML) li
 The GraphFrames is a purpose graph processing library that provides a set of APIs for performing graph analysis efficiently, using the PySpark core and PySparkSQL. It is optimized for fast distributed computing. 
 
 Advantages of using PySpark: 
+
 • Python is very easy to learn and implement. 
+
 • It provides simple and comprehensive API. 
+
 • With Python, the readability of code, maintenance, and familiarity is far better. 
+
 • It features various options for data visualization, which is difficult using Scala or Java.  
 
 ## How to get started 
