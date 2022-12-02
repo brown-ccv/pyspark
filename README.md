@@ -92,30 +92,36 @@ pip install notebook
 ```
 
 4. Clone this directory and navigate to the base of this directory. 
+5. You can also avoid using anaconda and install packages separatly using pip and brew. 
+```
+brew install openjdk@11
+export JAVA_HOME=/usr/local/opt/openjdk@11
+pip install pyspark
+````
 
-5. Create an anaconda environment using *environment.yaml* file. 
+6. Create an anaconda environment using *environment.yaml* file. 
 
 ```
 conda env create -f environment.yml
 conda activate pyspark-tutorial
 
 ```
-6. Addinng pyspark-tutorial environment to jupyter notebook. 
+7. Addinng pyspark-tutorial environment to jupyter notebook. 
 
 ```
 python -m ipykernel install --user --name=pyspark-tutorial
 ```
 
-7. Strart jupyter notebook 
+8. Strart jupyter notebook 
 
 ```
 jupyter notebook
 ```
 
-8. Navigate to a notebook directory and open a *MEDV_predictions.ipynb* notebook. 
+9. Navigate to a notebook directory and open a *MEDV_predictions.ipynb* notebook. 
 
 ![notebook](assets/template_two.png)
 
-9. *Pyspark-tutorial* should automatically be your environment in the notebook. 
+10. *Pyspark-tutorial* should automatically be your environment in the notebook. 
 
 
